@@ -20,7 +20,7 @@ node {
   
     stage('deploy') {
       def resourceGroup = 'k-jenkins-get-started-rg'
-      def webAppName = 'Appex-kkr'
+      def webAppName = 'Apex-kkr'
       // login Azure
       withCredentials([usernamePassword(credentialsId: 'AzureServicePrincipal', passwordVariable: 'AZURE_CLIENT_SECRET', usernameVariable: 'AZURE_CLIENT_ID')]) {
        sh '''
